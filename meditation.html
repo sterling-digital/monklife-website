@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Meditation & Practice - MonkLife</title>
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Source+Sans+Pro:wght@300;400;600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <nav class="navbar">
+            <div class="nav-container">
+                <a href="index.html" class="nav-logo">MonkLife</a>
+                <ul class="nav-menu">
+                    <li class="nav-item"><a href="index.html" class="nav-link">Home</a></li>
+                    <li class="nav-item"><a href="foundations.html" class="nav-link">Foundations</a></li>
+                    <li class="nav-item"><a href="meditation.html" class="nav-link active">Meditation</a></li>
+                    <li class="nav-item"><a href="history.html" class="nav-link">History</a></li>
+                    <li class="nav-item"><a href="resources.html" class="nav-link">Resources</a></li>
+                </ul>
+                <div class="hamburger">
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                    <span class="bar"></span>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="page-header">
+            <div class="container">
+                <h1>Meditation & Practice</h1>
+                <p>Discover the transformative power of mindfulness and meditation in daily life</p>
+            </div>
+        </section>
+
+        <section class="content-section">
+            <div class="highlight-box">
+                <h2>🧘‍♀️ Meditation Timer</h2>
+                <p>Use this timer for your meditation practice. Choose your duration and begin your journey to inner peace.</p>
+                
+                <div style="text-align: center; margin: 2rem 0;">
+                    <div style="margin-bottom: 1rem;">
+                        <label for="meditation-duration" style="font-weight: 600; margin-right: 1rem;">Duration:</label>
+                        <select id="meditation-duration" style="padding: 0.5rem; border-radius: 5px; border: 1px solid #ccc;">
+                            <option value="60">1 minute</option>
+                            <option value="300" selected>5 minutes</option>
+                            <option value="600">10 minutes</option>
+                            <option value="900">15 minutes</option>
+                            <option value="1200">20 minutes</option>
+                            <option value="1800">30 minutes</option>
+                        </select>
+                    </div>
+                    
+                    <div id="timer-display" style="font-size: 3rem; font-weight: 600; color: #8B4513; margin: 1rem 0;">05:00</div>
+                    
+                    <div style="display: flex; gap: 1rem; justify-content: center; flex-wrap: wrap;">
+                        <button id="start-meditation" class="btn-primary">Start Meditation</button>
+                        <button id="pause-meditation" class="btn-secondary" disabled>Pause</button>
+                        <button id="reset-meditation" class="btn-secondary">Reset</button>
+                    </div>
+                </div>
+            </div>
+
+            <h2>What is Buddhist Meditation?</h2>
+            <p>Buddhist meditation is a practice of training the mind to develop awareness, concentration, and insight. Unlike relaxation techniques, Buddhist meditation aims to transform the mind fundamentally, leading to wisdom and liberation from suffering.</p>
+
+            <h2>Basic Meditation Techniques</h2>
+
+            <div class="practice-card">
+                <h3>Mindfulness of Breathing (Anapanasati)</h3>
+                <p>This is often the first meditation technique taught to beginners. It involves focusing attention on the breath as it naturally flows in and out.</p>
+                
+                <h4>How to Practice:</h4>
+                <ol style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Find a comfortable seated position with your back straight</li>
+                    <li>Close your eyes or soften your gaze downward</li>
+                    <li>Notice the natural rhythm of your breathing</li>
+                    <li>Focus on the sensation of breath at the nostrils</li>
+                    <li>When your mind wanders, gently return attention to the breath</li>
+                    <li>Continue for your chosen duration</li>
+                </ol>
+
+                <div style="background: #F0F8FF; padding: 1rem; border-radius: 5px; margin: 1rem 0;">
+                    <strong>💡 Tip:</strong> Don't try to control your breathing. Simply observe it as it naturally occurs.
+                </div>
+            </div>
+
+            <div class="practice-card">
+                <h3>Loving-Kindness Meditation (Metta)</h3>
+                <p>This practice cultivates unconditional love and goodwill toward all beings, starting with yourself and extending outward.</p>
+                
+                <h4>Traditional Phrases:</h4>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>"May I be happy and healthy"</li>
+                    <li>"May I be peaceful and at ease"</li>
+                    <li>"May I be free from suffering"</li>
+                    <li>"May I live with joy and compassion"</li>
+                </ul>
+
+                <h4>Progression:</h4>
+                <ol style="padding-left: 2rem; margin: 1rem 0;">
+                    <li><strong>Self:</strong> Direct loving-kindness toward yourself</li>
+                    <li><strong>Loved ones:</strong> Extend it to family and friends</li>
+                    <li><strong>Neutral people:</strong> Include acquaintances and strangers</li>
+                    <li><strong>Difficult people:</strong> Gradually include those you have conflicts with</li>
+                    <li><strong>All beings:</strong> Extend loving-kindness to all living creatures</li>
+                </ol>
+            </div>
+
+            <div class="practice-card">
+                <h3>Body Scan Meditation</h3>
+                <p>This practice involves systematically focusing attention on different parts of the body to develop mindfulness and relaxation.</p>
+                
+                <h4>Instructions:</h4>
+                <ol style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Lie down comfortably or sit with good posture</li>
+                    <li>Start with the top of your head</li>
+                    <li>Slowly move your attention down through each body part</li>
+                    <li>Notice sensations without trying to change them</li>
+                    <li>Spend 30-60 seconds on each area</li>
+                    <li>End with awareness of the whole body</li>
+                </ol>
+            </div>
+
+            <div class="practice-card">
+                <h3>Walking Meditation</h3>
+                <p>A form of meditation in motion that can be practiced indoors or outdoors, focusing on the physical sensations of walking.</p>
+                
+                <h4>Practice Steps:</h4>
+                <ol style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Choose a path 10-20 steps long</li>
+                    <li>Walk very slowly and deliberately</li>
+                    <li>Focus on the sensations of lifting, moving, and placing each foot</li>
+                    <li>When you reach the end, pause and turn mindfully</li>
+                    <li>Continue for 10-20 minutes</li>
+                </ol>
+            </div>
+
+            <h2>Establishing a Daily Practice</h2>
+
+            <div class="highlight-box">
+                <h3>Creating Your Meditation Routine</h3>
+                
+                <h4>Start Small:</h4>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Begin with 5-10 minutes daily</li>
+                    <li>Gradually increase duration as you build consistency</li>
+                    <li>Consistency is more important than duration</li>
+                </ul>
+
+                <h4>Choose the Right Time:</h4>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li><strong>Morning:</strong> Fresh mind, sets positive tone for the day</li>
+                    <li><strong>Evening:</strong> Helps process the day and prepare for rest</li>
+                    <li><strong>Both:</strong> Ideal if you can manage it</li>
+                </ul>
+
+                <h4>Create a Sacred Space:</h4>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Choose a quiet, comfortable spot</li>
+                    <li>Keep it clean and uncluttered</li>
+                    <li>Consider adding inspiring objects (Buddha statue, candles, flowers)</li>
+                    <li>Use the same space regularly to build association</li>
+                </ul>
+            </div>
+
+            <h2>Common Challenges and Solutions</h2>
+
+            <div class="practice-card">
+                <h3>🌪️ Restless Mind</h3>
+                <p><strong>Challenge:</strong> Thoughts constantly arise and distract from meditation.</p>
+                <p><strong>Solution:</strong> This is completely normal! The goal isn't to stop thoughts but to notice them without judgment and gently return to your focus point.</p>
+            </div>
+
+            <div class="practice-card">
+                <h3>😴 Drowsiness</h3>
+                <p><strong>Challenge:</strong> Feeling sleepy or losing alertness during meditation.</p>
+                <p><strong>Solution:</strong> Sit up straighter, open your eyes slightly, or meditate when you're naturally more alert. Ensure you're getting adequate sleep.</p>
+            </div>
+
+            <div class="practice-card">
+                <h3>⏰ Lack of Time</h3>
+                <p><strong>Challenge:</strong> Feeling too busy to meditate regularly.</p>
+                <p><strong>Solution:</strong> Start with just 5 minutes. You can meditate anywhere - even on public transport or during breaks at work.</p>
+            </div>
+
+            <div class="practice-card">
+                <h3>🎯 Difficulty Concentrating</h3>
+                <p><strong>Challenge:</strong> Unable to maintain focus on meditation object.</p>
+                <p><strong>Solution:</strong> Use counting (count breaths 1-10, then repeat) or try guided meditations initially. Remember, noticing distraction IS mindfulness.</p>
+            </div>
+
+            <h2>Mindfulness in Daily Life</h2>
+            <p>Meditation isn't limited to formal sitting practice. You can cultivate mindfulness throughout your day:</p>
+
+            <div class="resource-grid">
+                <div class="resource-card">
+                    <h3>Mindful Eating</h3>
+                    <ul>
+                        <li>Eat slowly and without distractions</li>
+                        <li>Notice colors, textures, and flavors</li>
+                        <li>Chew thoroughly and mindfully</li>
+                        <li>Appreciate the nourishment</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Mindful Listening</h3>
+                    <ul>
+                        <li>Give full attention to others when they speak</li>
+                        <li>Notice your urge to respond or interrupt</li>
+                        <li>Listen to sounds in your environment</li>
+                        <li>Practice deep, empathetic listening</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Mindful Work</h3>
+                    <ul>
+                        <li>Take mindful breaks throughout the day</li>
+                        <li>Focus on one task at a time</li>
+                        <li>Notice stress and tension in your body</li>
+                        <li>Breathe consciously during challenging moments</li>
+                    </ul>
+                </div>
+
+                <div class="resource-card">
+                    <h3>Mindful Movement</h3>
+                    <ul>
+                        <li>Pay attention while walking</li>
+                        <li>Notice your posture throughout the day</li>
+                        <li>Practice gentle stretching mindfully</li>
+                        <li>Be aware of physical sensations</li>
+                    </ul>
+                </div>
+            </div>
+
+            <h2>The Benefits of Regular Practice</h2>
+
+            <div class="highlight-box">
+                <h3>Mental Benefits:</h3>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Reduced stress and anxiety</li>
+                    <li>Improved focus and concentration</li>
+                    <li>Greater emotional stability</li>
+                    <li>Enhanced self-awareness</li>
+                    <li>Increased compassion and empathy</li>
+                </ul>
+
+                <h3>Physical Benefits:</h3>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Lower blood pressure</li>
+                    <li>Improved sleep quality</li>
+                    <li>Reduced chronic pain</li>
+                    <li>Strengthened immune system</li>
+                    <li>Decreased inflammation</li>
+                </ul>
+
+                <h3>Spiritual Benefits:</h3>
+                <ul style="padding-left: 2rem; margin: 1rem 0;">
+                    <li>Deeper understanding of Buddhist teachings</li>
+                    <li>Greater sense of inner peace</li>
+                    <li>Enhanced wisdom and insight</li>
+                    <li>Freedom from negative mental patterns</li>
+                    <li>Progress toward enlightenment</li>
+                </ul>
+            </div>
+
+            <div class="highlight-box">
+                <blockquote style="font-style: italic; text-align: center;">
+                    "Meditation brings wisdom; lack of meditation leaves ignorance. Know well what leads you forward and what holds you back, and choose the path that leads to wisdom."
+                    <cite style="display: block; margin-top: 1rem;">— Buddha</cite>
+                </blockquote>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <p>&copy; 2025 MonkLife. A resource for learning Buddhism and cultivating inner peace.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
