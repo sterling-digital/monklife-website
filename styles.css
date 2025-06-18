@@ -132,6 +132,11 @@ main {
     min-height: 500px;
 }
 
+.hero-background{
+    background: linear-gradient(135deg, #F5F5DC, #FAEBD7);
+
+}
+
 .hero-content {
     flex: 1;
     max-width: 600px;
